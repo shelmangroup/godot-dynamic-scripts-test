@@ -25,8 +25,8 @@ func _ready():
 		push_error("An error occurred in the HTTP request.")
 
 func _http_request_completed(result, response_code, headers, body):
+	print("Downloaded script: ", response_code)
 	load_script(body.get_string_from_utf8())
-
 
 func load_script(source_code):
 	$Behavior.script.source_code = source_code
