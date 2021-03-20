@@ -4,13 +4,6 @@ export var color : Color
 export var script_url : String
 var behavior = null
 
-var foo = """
-extends Node2D
-
-func _ready():
-	$"../Label".text = "Foo"
-"""
-
 func _ready():
 	$ColorRect.color = color
 	$Label.text = "..."

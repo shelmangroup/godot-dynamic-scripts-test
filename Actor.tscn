@@ -7,7 +7,7 @@
 extents = Vector2( 51.1645, 102.883 )
 
 [node name="Actor" type="RigidBody2D"]
-mass = 0.215306
+mass = 0.510204
 script = ExtResource( 1 )
 color = Color( 0.898039, 0, 1, 1 )
 
@@ -33,12 +33,11 @@ __meta__ = {
 [node name="Script" type="Label" parent="."]
 self_modulate = Color( 0, 0, 0, 1 )
 show_behind_parent = true
-margin_left = 7.0
-margin_top = -40.0
-margin_right = 100.0
-margin_bottom = -3.0
+margin_left = -7.68347
+margin_top = -33.2535
+margin_right = 85.3165
+margin_bottom = 3.74646
 text = "blablabla"
-align = 1
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
