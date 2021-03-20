@@ -9,11 +9,8 @@ func _ready():
 	timer = Timer.new()
 	add_child(timer)
 	timer.start(0.1)
-	timer.connect("timeout", self, "shrink")
-
-func process(delta):
-	pass
+	timer.connect("timeout", self, "disco")
 	
-func shrink():
+func disco():
 	color.h = color.h + 0.075
 	$"../ColorRect".color = color

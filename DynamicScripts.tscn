@@ -11,12 +11,12 @@ position = Vector2( 0, -0.396851 )
 [node name="A" parent="." instance=ExtResource( 1 )]
 position = Vector2( 82.4689, 362.024 )
 color = Color( 0.945098, 0.458824, 1, 1 )
-script_url = "foo.gd"
+script_url = "https://raw.githubusercontent.com/shelmangroup/godot-dynamic-scripts-test/main/foo.gd"
 
 [node name="B" parent="." instance=ExtResource( 1 )]
 position = Vector2( 790.576, 360.354 )
 color = Color( 0.45098, 1, 0.690196, 1 )
-script_url = "bar.gd"
+script_url = "https://raw.githubusercontent.com/shelmangroup/godot-dynamic-scripts-test/main/bar.gd"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
