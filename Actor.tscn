@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Actor.gd" type="Script" id=1]
+
+[node name="Actor" type="Node2D"]
+script = ExtResource( 1 )
+color = Color( 0.898039, 0, 1, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 100.0
+margin_bottom = 200.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_right = 50.0
+margin_bottom = 100.0
+rect_scale = Vector2( 2, 2 )
+text = "A"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
