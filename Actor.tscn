@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Actor.gd" type="Script" id=1]
 
-[node name="Actor" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 51.1645, 102.883 )
+
+[node name="Actor" type="RigidBody2D"]
+mass = 0.215306
 script = ExtResource( 1 )
 color = Color( 0.898039, 0, 1, 1 )
 
@@ -24,3 +28,21 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Script" type="Label" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+show_behind_parent = true
+margin_left = 7.0
+margin_top = -40.0
+margin_right = 100.0
+margin_bottom = -3.0
+text = "blablabla"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 50, 100 )
+shape = SubResource( 1 )
